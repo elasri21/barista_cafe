@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: $family-font;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    transition: .3s linear;
+}
+
+p {
+    color: $text-c;
+    font-weight: 300;
+    font-size: 16px;
+}
+section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.container {
+    @media (min-width: 1200px) {
+        margin-left: 120px !important;        
+        margin-right: 120px !important;
+    }
+    @media (min-width: 922px) and (max-width: 1199px) {
+        margin-left: 80px !important;        
+        margin-right: 80px !important;
+    }
+    @media (min-width: 768px) and (max-width: 921px) {
+        margin-left: 60px !important;        
+        margin-right: 60px !important;
+    }
+    @media (min-width: 500px) and (max-width: 767px) {
+        margin-left: 40px !important;        
+        margin-right: 40px !important;
+    }
+    margin-left: 25px;    
+    margin-right: 25px;
+}
+.head-section {
+    text-align: center;
+    margin-bottom: 40px;
+    &.left {
+        text-align: left;
+    }
+    a, span {
+        display: block;
+        text-transform: capitalize;
+        font-weight: 300;
+        font-size: 14px;
+        transition: .3s linear;
+    }
+    h2 {
+        font-weight: 700;
+        font-size: 28px;
+        text-transform: capitalize;
+        letter-spacing: 1px;
+    }
+}
+.c-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.between-flex {
+    display: flex;
+    justify-content: space-between;
+}
+.align-c {
+    display: flex;
+    align-items: center;
+}
+.round-corner {
+    border-radius: 30px;
+}
+.corner-6 {
+    border-radius: 6px;
+}
+.dot {
+    width: 10px;
+    height: 10px;
+    border: 2px solid $review-bg;
+    border-radius: 50%;
+    background-color: #fff;
+}
